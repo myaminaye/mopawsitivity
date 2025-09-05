@@ -174,7 +174,7 @@ export default function PlayersPage() {
       <div className="container mx-auto px-6 py-8">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">NBA Players</h1>
+          <h1 className="text-4xl font-bold  mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">NBA Players</h1>
           <p className="text-gray-600 text-lg mb-8">Browse and assign players to your teams</p>
 
           {usingMockData && (
