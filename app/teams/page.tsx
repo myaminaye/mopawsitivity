@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Team, useTeams } from "../context/TeamContext";
+import { FabMenu } from "../components/FavMenu";
 
 export default function TeamsPage() {
   const { teams, deleteTeam, removePlayer } = useTeams();
@@ -50,6 +51,7 @@ export default function TeamsPage() {
           ))}
         </div>
       </div>
+      <FabMenu />
     </main>
   );
 }

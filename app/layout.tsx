@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "./context/AuthContext";
 import { TeamProvider } from "./context/TeamContext";
+import Providers from "./providers";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -18,9 +19,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={geistMono.className}>
       <body>
-        <AuthProvider>
+        <Providers>
+        {/* <AuthProvider> */}
           <TeamProvider>{children}</TeamProvider>
-        </AuthProvider>
+          {/* </AuthProvider> */}
+          </Providers>
       </body>
     </html>
   );

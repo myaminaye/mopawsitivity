@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Slide } from "./types/slideTypes";
 import Typewriter from "typewriter-effect";
 import { FabMenu } from "./components/FavMenu";
+import AuthFab from "./components/AuthFab";
 
 const delayMs = 1000;
 
@@ -170,6 +171,7 @@ export default function Home() {
       </AnimatePresence>
 
       <FabMenu />
+      <AuthFab />
     </main>
   );
 }
