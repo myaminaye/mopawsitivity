@@ -283,7 +283,7 @@ export default function PlayersPage() {
                 <svg className="w-6 h-6 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                That's all! ({players.length} players loaded)
+                {`That's all! (${players.length} players loaded)`}
               </div>
             ) : (
               <div className="text-gray-500">No players found</div>
@@ -307,7 +307,7 @@ export default function PlayersPage() {
         )}
       </div>
       <FabMenu />
-      <AuthFab/>
+      <AuthFab />
     </main>
   );
 }
