@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Team, useTeams } from "../context/TeamContext";
 import { FabMenu } from "../components/FavMenu";
+import AuthFab from "../components/AuthFab";
 
 export default function TeamsPage() {
   const { teams, deleteTeam, removePlayer } = useTeams();
@@ -119,6 +120,7 @@ export default function TeamsPage() {
         )}
       </div>
       <FabMenu />
+      <AuthFab/>
     </main>
   );
 }

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTeams } from "../context/TeamContext";
 import { FabMenu } from "../components/FavMenu";
+import AuthFab from "../components/AuthFab";
 
 type Player = {
   id: number;
@@ -306,6 +307,7 @@ export default function PlayersPage() {
         )}
       </div>
       <FabMenu />
+      <AuthFab/>
     </main>
   );
 }
